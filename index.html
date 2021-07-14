@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BlaBlaBla</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Scroll -->
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+  <style>
+  body {
+      position: relative; 
+  }
+  </style>
+<style >
+/* ------- custom my scroll -------*/  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #14141f; 
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3d3d5c; 
+    border-radius: 4px
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666699; 
+  }
+
+  </style>
+<!-- Navbar -->
+  <style>
+    body{min-height:200vh;}
+.navbar-expand{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-expand.scrolled{
+  background:MediumSlateBlue;
+}
+  </style>
+  <script>
+    $(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+  </script>
+ <!-- Active Effect -->
+    <style>
+      body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:  #ffffff;
+}
+ul a:hover{
+  color:  #ffffff !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color: #ffffff !important;
+}
+    </style>
+    <script>
+      var linkClicked = document.getElementsByClassName('nav-link');
+var numClass = linkClicked.length;
+
+for (var i = 0; i < numClass; i++) {
+    linkClicked[i].addEventListener('click', function(){
+      var onTheMoment = document.getElementsByClassName('active');
+      onTheMoment[0].className = onTheMoment[0].className.replace(' active', '');
+      this.className += ' active';
+    }, false);
+  }
+    </script>
+
+<!-- landingpage -->
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+<!-- Buttons -->
+
+  <style>
+.btn-colour-1 {
+ background-color:MediumSlateBlue; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+<style>
+.btn-outline {
+  color: MediumSlateBlue;
+  background-color: #ffffff;
+  border-color: MediumSlateBlue;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 15px;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.btn-outline {
+  color: MediumSlateBlue;
+  background-color: #ffffff;
+  border-color: MediumSlateBlue;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 15px;
+   font-size: 16px;
+  margin: 4px 2px;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+  background:MediumSlateBlue;
+  color: #ffffff;
+  border-color: MediumSlateBlue;
+  
+}
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+.button6 {border-radius: 30px;}
+</style>
+
+<!-- Container -->
+<style>.container-bg {
+    background: #404040;
+}
+</style>
+<!-- footer -->
+<style>
+.footer {
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: transparent;
+   text-align: center;
+}
+</style>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color:mediumslateblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: Navy;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+<!-- footer icon -->
+<style>
+  
+
+/* Style the icon bar links */
+
+  
+.icon-bar a {
+                display: inline-block;
+                text-align: center;
+                padding: 15px;
+                transition: all 0.3s ease;
+                color: mediumslateblue;
+                font-size: 16px;
+                border-radius: 100%;
+                width: 45px;
+                height: 45px;
+                margin: 5px; 
+            }
+
+
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  color: Navy;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand fixed-top py-3">
+        <!-- Brand/logo -->
+  <a class="navbar-brand" href="mosi.html">
+    <img src="Holostars_logo.png" alt="logo" style="width:300px;padding-left:50px;">
+  </a>
+                <ul class="navbar-nav ml-auto" style="padding-right:50px;" >
+         <!-- Navbar buttons -->
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="talent.html">Talents</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="Official G.html">Official Goods</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="FAQ.html">FAQ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="#section4">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="community.html">Community</a>
+    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.jpg" alt="Home1" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpg" alt="Home2" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" alt="Home3" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<div id="section4" class="container-fluid" style="padding-top:70px;padding-bottom:70px;">
+  <h1 style="text-align:center; color:mediumslateblue;">About us</h1>
+  <hr>
+  <br><br> <!-- Line break -->
+  <div class="row">
+     <div class="col" style="padding-left:400px;">
+      <img src="260px-Yagoo.jpg" alt="Yagoo" width="260" height="391">
+      <br><br>
+      <p style="font-size:70%; color:DimGray;">YAGOO/Motoaki Tanigo, CEO of COVER Corporation</p>
+     </div>
+    <div class="col" style="padding-top:80px;padding-right:350px">
+  <p style="text-align:center;">Holostars (ホロスターズ), is a male-only Virtual<br> YouTuber agency established by Cover Corp.<br> Auditions for the first batch began on May 27, 2019,<br> and the group initially debuted with 3 members. On<br> December 2, 2019, Holostars merged with the main<br> Hololive branch and INoNaKa Music, their music label, to form Hololive Production.<br>All 9 talents of Holostars' are sorted by generation.</p>
+ 
+  <!-- Button -->
+ <div class="container" style="padding-left:80px;">
+  <p><a href="https://cover-corp.com/" class="btn btn-outline button6" role="button">Explore COVER Corp.</a></p>
+</div>
+  </div>
+ </div>
+</div>
+
+<div class="container-bg">
+    <div class="container"style="text-align: Center; color:white;">
+  <br><br>
+<p>Operating Company</p>
+  <img src="1200px-Cover_Corp_horizontal_logo_1.png" alt="footer" style="width:500px;">
+</div>
+<br><br>
+</div>
+  
+ <div class="footer">
+    <br><br>
+    <div class="row">
+      
+      <div class="col font-weight-bold" style="padding-top:20px;">
+         <a style="text-align: Center;" href="https://cover-corp.com/recruit/">Recuitment</a>
+        </div>
+<div class="col font-weight-bold"style="padding-top:20px;">
+  <a style="text-align: Center;" href="https://www.hololive.tv/contact">Contact Us</a>
+   </div>
+      <div class="col">
+        <div class="icon-bar">
+        <!-- Add font awesome icons -->
+<a href="https://space.bilibili.com/444316844" ><span class="iconify" data-icon="simple-icons:bilibili" data-inline="false" 
+></span></a>
+<a style="text-align: Center;" href="https://twitter.com/holostarstv" class="fa fa-twitter"></a>
+<a style="text-align: Center;" href="https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA" class="fa fa-youtube"></a>
+</div>
+</div>
+</div>
+<hr>
+<div class="Copyright">
+  <p style="font-size: 13px;text-align: right; padding-right:90px; color:dimgray ;"> © 2016 COVER Corp</p><br>
+</div>
+
+
+</body>
+</html>
