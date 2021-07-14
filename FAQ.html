@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BlaBlaBla</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Scroll -->
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+  <style>
+  body {
+      position: relative; 
+  }
+  </style>
+<style >
+/* ------- custom my scroll -------*/  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #14141f; 
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3d3d5c; 
+    border-radius: 4px
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666699; 
+  }
+
+  </style>
+<!-- Navbar -->
+  <style>
+    body{min-height:200vh;}
+.navbar-expand{
+  transition:500ms ease;
+  background:SlateBlue;
+}
+.navbar-expand.scrolled{
+  background:MediumSlateBlue;
+}
+  </style>
+  <script>
+    $(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+  </script>
+ <!-- Active Effect -->
+    <style>
+      body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:  #ffffff;
+}
+ul a:hover{
+  color:  #ffffff !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color: #ffffff !important;
+}
+    </style>
+    <script>
+      var linkClicked = document.getElementsByClassName('nav-link');
+var numClass = linkClicked.length;
+
+for (var i = 0; i < numClass; i++) {
+    linkClicked[i].addEventListener('click', function(){
+      var onTheMoment = document.getElementsByClassName('active');
+      onTheMoment[0].className = onTheMoment[0].className.replace(' active', '');
+      this.className += ' active';
+    }, false);
+  }
+    </script>
+
+<!-- landingpage -->
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+<!-- Buttons -->
+
+  <style>
+.btn-colour-1 {
+ background-color:MediumSlateBlue; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+<style>
+.btn-outline {
+  color: MediumSlateBlue;
+  background-color: #ffffff;
+  border-color: MediumSlateBlue;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 15px;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.btn-outline {
+  color: MediumSlateBlue;
+  background-color: #ffffff;
+  border-color: MediumSlateBlue;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 15px;
+   font-size: 16px;
+  margin: 4px 2px;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+  background:MediumSlateBlue;
+  color: #ffffff;
+  border-color: MediumSlateBlue;
+  
+}
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+.button6 {border-radius: 30px;}
+</style>
+
+<!-- Container -->
+<style>.container-bg {
+    background: #404040;
+}
+</style>
+<!-- footer -->
+<style>
+.footer {
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: transparent;
+   text-align: center;
+}
+</style>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color:mediumslateblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: Navy;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+<!-- footer icon -->
+<style>
+  
+
+/* Style the icon bar links */
+
+  
+.icon-bar a {
+                display: inline-block;
+                text-align: center;
+                padding: 15px;
+                transition: all 0.3s ease;
+                color: mediumslateblue;
+                font-size: 16px;
+                border-radius: 100%;
+                width: 45px;
+                height: 45px;
+                margin: 5px; 
+            }
+
+
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  color: Navy;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+</style>
+
+<!-- FAQ -->
+<style>
+  .cd-faq__items { // on mibile, faq contents slides in from the right
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  top: 0;
+  right: 0;
+  transform: translateZ(0) translateX(0%);
+  transition: transform .3s;
+  color: #000;
+}
+
+.cd-faq__items--slide-in {
+  transform: translateX(0);
+}
+
+  .cd-faq__categories { // on mibile, faq contents slides in from the right
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  top: 0;
+  right: 0;
+  transform: translateZ(0) translateX(0%);
+  transition: transform .3s;
+  color: #000;
+}
+
+  .truncate { // on mibile, faq contents slides in from the right
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  top: 0;
+  right: 0;
+  transform: translateZ(0) translateX(0%);
+  transition: transform .3s;
+  color: mediumslateblue;
+}
+
+</style>
+
+<!-- Meet the team -->
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+</style>
+<!-- TEST-->
+<style>
+.container2 {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container2 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container2 span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container2 {
+    text-align: center;
+  }
+
+  .container2 img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+
+    </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand fixed-top py-3">
+        <!-- Brand/logo -->
+  <a class="navbar-brand" href="mosi.html">
+    <img src="Holostars_logo.png" alt="logo" style="width:300px;padding-left:50px;">
+  </a>
+                <ul class="navbar-nav ml-auto" style="padding-right:50px;" >
+         <!-- Navbar buttons -->
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="talent.html">Talents</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="Official G.html">Official Goods</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="FAQ.html">FAQ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="https://cover-corp.com/">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-uppercase font-weight-bold" style="font-size:120%; color:Ivory;" href="community.html">Community</a>
+    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<br><br>
+<br><br>
+<br><br>
+
+<!-- FAQ -->
+<h1 style="text-align: center"> Frequently Asked Questions </h1>
+<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+  <ul class="cd-faq__categories">
+    <li class="cd-faq__title"><h2>Basics</h2></li>
+    <li><a class="cd-faq__category cd-faq__category-selected truncate" href="#basics" style="color:mediumslateblue;">Where to find lastest notifications?</a></li>
+    <li><a class="cd-faq__category truncate" href="#mobile" style="color:mediumslateblue;">Live stream on which platform?</a></li>
+    <li><a class="cd-faq__category truncate" href="#mobile" style="color:mediumslateblue;">How to support talents?</a></li>
+    <!-- ... -->
+  </ul> <!-- cd-faq__categories -->
+
+  <div class="cd-faq__items">
+    <ul id="basics" class="cd-faq__group">
+      <li class="cd-faq__title"><h2>About talents</h2></li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="talent.html"><span>Talents information</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <!-- content here -->
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+
+      <li class="cd-faq__item" >
+        <a class="cd-faq__trigger" href="#0" style="color:mediumslateblue;"><span>Talents fanclub</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <!-- content here -->
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0" style="color:mediumslateblue;"><span>Up comming concerts & albums</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <!-- content here -->
+          </div>
+        </div> <!-- cd-faq__content --></li>
+
+      <!-- ... -->
+    </ul> <!-- cd-faq__group -->
+
+    <ul id="mobile" class="cd-faq__group">
+      <!-- ... -->
+    </ul> <!-- cd-faq__group -->
+
+    <!-- ... -->
+  </div> <!-- cd-faq__items -->
+
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+</section> 
+
+<!-- Meet the team -->
+<hr>
+<h2 style="text-align: center"> DEVELOPE TEAM </h2>
+
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="01-2.jpg" alt="Yagoo" style="width:100%; height:350px">
+      <div class="container">
+        <h2>Motoaki Tanigo</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Best girl YAGOO, the most famous idol in Hololive.</p>
+        <p>tanigo@gmail.com</p>
+        <p><button class="btn btn-outline button6">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="__a_chan_yagoo_and_daidou_shinove_hololive_and_1_more_drawn_by_ikuyoan__352cd26314151a6fcb6c29d608e9a290.jpg" alt="Daidou" style="width:100%; height:350px">
+      <div class="container">
+        <h2>Daidou</h2>
+        <p class="title">Manager</p>
+        <p>Holostars' manager, love making fun of them.</p>
+        <p>daidoumg@gmail.com</p>
+        <p><button class="btn btn-outline button6">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Lucilius.(Granblue.Fantasy).full.2725221.jpg" alt="John" style="width:100%; height:350px">
+      <div class="container">
+        <h2>Katoru</h2>
+        <p class="title">Designer</p>
+        <p>Depressed.</p>
+        <p>anhntlha140314@gmail.com</p>
+        <p><button class="btn btn-outline button6">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+<section>
+  <!-- Responsive Testimonials -->
+<br><br>
+
+
+  <h3 style="text-align: left; font-size: 30px; color: black"> Respons</h3>
+  
+  <div class="container2">
+  <img src="9e87c109508d518b0c7f1a4212a1e529.jpg" alt="Avatar" style="width:90px">
+  <p><span>Simp1</span> Top fan</p>
+  <p>Babudon!!!Babudon!!!Babudon!!!Babudon!!!Babudon!!!</p>
+</div>
+
+<div class="container2">
+  <img src="043971775ef1ea4b2f130157c7ba1439.jpg" alt="Avatar" style="width:90px">
+  <p><span >Simp2</span> Top fan</p>
+  <p>Arurandeisu!!!!</p>
+</div>
+
+
+</section>
+
+<div class="container-bg">
+    <div class="container"style="text-align: Center; color:white;">
+  <br><br>
+<p>Operating Company</p>
+  <img src="1200px-Cover_Corp_horizontal_logo_1.png" alt="footer" style="width:500px;">
+</div>
+<br><br>
+</div>
+  
+
+ <div class="footer">
+    <br><br>
+    <div class="row">
+      
+      <div class="col font-weight-bold" style="padding-top:20px;">
+         <a style="text-align: Center;" href="https://cover-corp.com/recruit/">Recuitment</a>
+        </div>
+<div class="col font-weight-bold"style="padding-top:20px;">
+  <a style="text-align: Center;" href="https://www.hololive.tv/contact">Contact Us</a>
+   </div>
+      <div class="col">
+        <div class="icon-bar">
+        <!-- Add font awesome icons -->
+<a href="https://space.bilibili.com/444316844" ><span class="iconify" data-icon="simple-icons:bilibili" data-inline="false" 
+></span></a>
+<a style="text-align: Center;" href="https://twitter.com/holostarstv" class="fa fa-twitter"></a>
+<a style="text-align: Center;" href="https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA" class="fa fa-youtube"></a>
+</div>
+</div>
+</div>
+<hr>
+<div class="Copyright">
+  <p style="font-size: 13px;text-align: right; padding-right:90px; color:dimgray ;"> © 2016 COVER Corp</p><br>
+</div>
+
+
+</body>
+</html>
